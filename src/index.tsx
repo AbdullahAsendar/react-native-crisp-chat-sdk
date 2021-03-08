@@ -20,6 +20,7 @@ type CrispChatSdkType = {
   setUserNickname(name: string): () => void;
   setUserPhone(phone: string): () => void;
   setUserAvatar(url: string): () => void;
+  setSessionValue(key: string, value: string): () => void;
   setSessionSegment(segment: string): () => void;
   pushSessionEvent(name: string, color: CrispSessionEventColors): () => void;
   resetSession(): () => void;
@@ -62,6 +63,10 @@ export const setUserAvatar = (url: string) => {
   if (Platform.OS === 'ios') {
     CrispChatSdk.setUserAvatar(url);
   }
+};
+
+export const setSessionValue = (key: string, value: string) => {
+    CrispChatSdk.setSessionValue(key, value);
 };
 
 export const setSessionSegment = (segment: string) => {
