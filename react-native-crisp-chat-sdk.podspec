@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.authors      = package["author"]
 
   s.platforms    = { :ios => "10.0" }
-  s.source       = { :git => "https://github.com/walterholohan/react-native-crisp-chat-sdk.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/AbdullahAsendar/react-native-crisp-chat-sdk.git", :tag => "#{s.version}" }
 
   
   s.source_files = "ios/**/*.{h,m,mm,swift}"

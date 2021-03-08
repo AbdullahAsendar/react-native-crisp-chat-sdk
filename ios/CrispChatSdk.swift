@@ -28,6 +28,11 @@ class CrispChatSdk: NSObject {
     }
     
     @objc
+    func setSessionValue(_ key: String, _ value: String) {
+        CrispSDK.session.setString(value, forKey: key)
+    }
+    
+    @objc
     func setSessionSegment(_ segment: String) {
         CrispSDK.session.segment = segment
     }
