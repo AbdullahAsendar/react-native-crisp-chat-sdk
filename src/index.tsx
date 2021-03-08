@@ -66,7 +66,9 @@ export const setUserAvatar = (url: string) => {
 };
 
 export const setSessionValue = (key: string, value: string) => {
+  if (Platform.OS === 'ios') {
     CrispChatSdk.setSessionValue(key, value);
+  }
 };
 
 export const setSessionSegment = (segment: string) => {

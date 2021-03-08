@@ -34,6 +34,11 @@ class CrispChatSdkModule(reactContext: ReactApplicationContext) : ReactContextBa
     }
 
     @ReactMethod
+    fun setSessionValue(key: String, value: String) {
+        Crisp.setSessionValue(value, key)
+    }
+
+    @ReactMethod
     fun resetSession() {
         val context = reactApplicationContext
         Crisp.resetChatSession(context)

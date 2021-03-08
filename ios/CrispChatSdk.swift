@@ -28,7 +28,7 @@ class CrispChatSdk: NSObject {
     }
     
     @objc
-    func setSessionValue(_ key: String, _ value: String) {
+    func setSessionValue(_ key: String, value: String) {
         CrispSDK.session.setString(value, forKey: key)
     }
     
