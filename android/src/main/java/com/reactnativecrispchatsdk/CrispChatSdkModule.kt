@@ -35,7 +35,7 @@ class CrispChatSdkModule(reactContext: ReactApplicationContext) : ReactContextBa
 
     @ReactMethod
     fun setSessionValue(key: String, value: String) {
-        Crisp.setSessionValue(value, key)
+        // Crisp.setSessionValue(value, key)
     }
 
     @ReactMethod
